@@ -1,0 +1,65 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+
+/***** mobile size *****/
+.container {
+  margin: 0.5rem;
+  border: 0.2rem solid tomato;
+}
+.bbb {
+    height: 20rem;
+  }
+
+/***** medium size *****/
+
+@media screen and (min-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  .box-1,
+  .box-2 {
+    flex-basis: 100%;
+  }
+  .box-3,
+  .box-4,
+  .box-5 {
+    flex-basis: 33.33%;
+  }
+
+  .box-6,
+  .box-7 {
+    flex-basis: 100%;
+  }
+  
+}
+
+/***** large size *****/
+
+@media screen and (min-width: 800px) {
+    .box-1,
+    .box-2 {
+      flex-basis: 50%;
+    }
+    .box-3,
+    .box-4,
+    .box-5 {
+      flex-basis: 33.33%;
+    }
+  
+    .box-6,
+    .box-7 {
+      flex-basis: 50%;
+    }
+}
